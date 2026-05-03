@@ -1,0 +1,24 @@
+.alive-img {
+  animation: float 3s ease-in-out infinite;
+  transition: transform 0.3s ease-out;
+  will-change: transform;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes lift {
+  0% {
+    transform: scale(1) translateY(0px);
+  }
+  100% {
+    transform: scale(1.02) translateY(-20px);
+  }
+
+}
